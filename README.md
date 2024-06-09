@@ -1,93 +1,70 @@
-# Adopt a Pet - Pet Adoption Website
+# Getting Started with Create React App
 
-## Project Description
+This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-Adopt a Pet is a pet adoption website built using React and React Router. The website allows users to view all adoptable pets, filter pets by species, view detailed profiles of individual pets, search for pets by name, and handle scenarios where pet details are unavailable.
+## Available Scripts
 
-## Features
+In the project directory, you can run:
 
-- **Home Page**: Displays all adoptable pets with the ability to filter by species (dogs, cats, rabbits, birds).
-- **Pet Details Page**: Displays detailed information about a specific pet based on the pet ID in the URL.
-- **Search Page**: Allows users to search for pets by name using a query parameter.
-- **Pet Not Found Page**: Redirects users to this page if the pet details are unavailable.
-- **Navigation Bar**: Allows users to navigate between different species and search for pets.
+### `yarn start`
 
-## Setup Instructions
+Runs the app in the development mode.\
+Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 
-1. **Clone the repository**:
-   ```bash
-   git clone https://github.com/your-username/Adopt_a_pet.git
-   cd Adopt_a_pet
-   ```
+The page will reload if you make edits.\
+You will also see any lint errors in the console.
 
-2. **Install dependencies**:
-   ```bash
-   npm install
-   ```
+### `yarn test`
 
-3. **Start the application**:
-   ```bash
-   npm start
-   ```
+Launches the test runner in the interactive watch mode.\
+See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
 
-4. **Open the application in your browser**:
-   Navigate to `http://localhost:3000`
+### `yarn build`
 
-## Implementation Details
+Builds the app for production to the `build` folder.\
+It correctly bundles React in production mode and optimizes the build for the best performance.
 
-### Routing Setup
+The build is minified and the filenames include the hashes.\
+Your app is ready to be deployed!
 
-1. **Installed React Router**:
-   ```bash
-   npm install --save react-router-dom@6
-   ```
+See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
 
-2. **Provided React Router at the root level** in `src/App.js`:
-   - Imported `RouterProvider` and used it to wrap the application routes.
+### `yarn eject`
 
-3. **Created the initial route**:
-   - Defined the `appRouter` constant with a route to the `Root` component.
+**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
 
-4. **Nested Routes and Index Route**:
-   - Added a nested route for `HomePage` in the `Root` route.
+If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
 
-5. **Dynamic Paths and URL Parameters**:
-   - Created dynamic routes for filtering pets by species and viewing pet details.
+Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
 
-6. **Implemented Search Feature**:
-   - Added a search bar to update the URL with query parameters and render the `SearchPage`.
+You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
 
-7. **Pet Details Not Found Handling**:
-   - Redirected to `PetDetailsNotFound` page if the pet details are unavailable and added a button to navigate back to the home page.
+## Learn More
 
-### Component Updates
+You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
 
-1. **Navigation Component**:
-   - Replaced `<a>` tags with `NavLink` for client-side navigation.
-   - Added visual indication for the active link.
+To learn React, check out the [React documentation](https://reactjs.org/).
 
-2. **HomePage Component**:
-   - Used `Link` component for pet details links to prevent page reloads.
+### Code Splitting
 
-3. **PetDetailsPage Component**:
-   - Used `useParams` hook to fetch pet details based on URL parameters.
-   - Redirected to `PetDetailsNotFound` page if pet details are not found.
+This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
 
-4. **SearchPage Component**:
-   - Used `useSearchParams` hook to filter pets by name based on query parameters.
+### Analyzing the Bundle Size
 
-## Usage
+This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
 
-- Navigate through different species using the navigation bar.
-- Click on a pet to view its detailed profile.
-- Use the search bar to find pets by name.
-- If a pet's details are unavailable, you will be redirected to a not found page with an option to return to the home page.
+### Making a Progressive Web App
 
-## License
+This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
 
-This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
+### Advanced Configuration
 
-## Acknowledgements
+This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
 
-- The project uses Mock Service Worker (MSW) to simulate API responses.
-- Developed as part of a learning exercise on Codecademy.
+### Deployment
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+
+### `yarn build` fails to minify
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
